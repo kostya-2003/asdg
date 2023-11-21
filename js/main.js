@@ -1,7 +1,7 @@
 const timer = document.getElementById("timer");
 console.log(timer);
 
-const countDown = new Date("nov 25, 2023 13:39:0").getTime();
+const countDown = new Date("dec 23, 2023 0:0:0").getTime();
 
 const update = setInterval(function () {
   const now = new Date().getTime();

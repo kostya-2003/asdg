@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Yuji+Syuku&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
+#home #homeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home #homeBox .homeTitle {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#home #homeBox .homeTitle .heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#home #homeBox .homeTitle .heading span {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#home #homeBox .homeTitle .heading h2 {
+  font-family: "Yuji Syuku", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+#home #homeBox .homeTitle #timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home #homeBox .homeTitle #timer .item {
+  font-family: "Kalam", cursive;
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+#home #homeBox .homeTitle #timer .item span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#home #homeBox .homeTitle #timer .item h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#home #homeBox .homeTitle #timer .item:nth-child(odd) {
+  background: #d8a33a;
+  border-radius: 5px;
+}
+#home #homeBox .homeImg {
+  width: 40%;
+  height: 600px;
+}
+#home #homeBox .homeImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about {
+  margin-top: 50px;
+}
+#about #aboutBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about #aboutBox .aboutTexts {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+#about #aboutBox .date h2 {
+  color: #d8a33a;
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Kalam", cursive;
+}
+
+#program {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 50px;
+}
+#program #programBox .title {
+  margin: 20px 0;
+  text-align: center;
+}
+#program #programBox .title h2 {
+  color: #111;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#program #programBox .programBar {
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+#program #programBox .programBar .item {
+  height: 100px;
+  width: calc(50% - 40px);
+  display: flex;
+  align-items: center;
+}
+#program #programBox .programBar .item .itemIcon {
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+#program #programBox .programBar .item .itemIcon svg {
+  fill: rgb(216, 164, 59);
+  width: 100%;
+  height: 100%;
+}
+#program #programBox .programBar .item .itemHeading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#program #programBox .programBar .item .itemHeading span {
+  font-size: 20px;
+  color: #111;
+  font-weight: 600;
+}
+#program #programBox .programBar .item .itemHeading h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 1px;
+}
+#program #programBox .programBar .item .itemHeading p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+#footer {
+  margin-top: 60px;
+}
+#footer .footerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footerBox .footerTop {
+  font-family: sans-serif;
+  display: flex;
+  text-align: center;
+  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .footerBox .footerTop p {
+  font-size: 34px;
+  font-weight: 600;
+  color: #111;
+}
+#footer .footerBox .footerTop p span {
+  color: #d8a33a;
+}
+#footer .footerBox .footerTop img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    margin-top: 40px;
+  }
+  #home #homeBox {
+    flex-direction: column;
+  }
+  #home #homeBox .homeTitle {
+    margin-right: 0;
+    width: 100%;
+  }
+  #home #homeBox .homeImg {
+    height: 100%;
+    width: 80%;
+  }
+  #program #programBox .programBar {
+    flex-direction: column;
+  }
+  #program #programBox .programBar .item {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 510px) {
+  #home #homeBox .homeImg {
+    width: 100%;
+  }
+  #home #homeBox .homeTitle .heading span {
+    font-size: 17px;
+  }
+  #home #homeBox .homeTitle .heading h2 {
+    font-size: 24px;
+  }
+  #home #homeBox .homeTitle #timer .item {
+    width: 60px;
+    height: 60px;
+  }
+  #home #homeBox .homeTitle #timer .item span {
+    top: 3px;
+    right: 3px;
+  }
+  #home #homeBox .homeTitle #timer .item h2 {
+    font-size: 24px;
+  }
+  #program #programBox .title h2 {
+    font-size: 30px;
+  }
+  #program #programBox .programBar .item .itemHeading span {
+    font-size: 18px;
+  }
+  #program #programBox .programBar .item .itemHeading h2 {
+    font-size: 16px;
+  }
+  #program #programBox .programBar .item .itemHeading p {
+    font-size: 14px;
+  }
+  #footer .footerBox .footerTop p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 410px) {
+  #about #aboutBox .date h2 {
+    color: #d8a33a;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Kalam", cursive;
+  }
+}/*# sourceMappingURL=main.css.map */

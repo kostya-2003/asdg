@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Yuji+Syuku&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("../Yerevanyan Regular");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
+
+#home {
+  #homeBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .homeTitle {
+      width: 60%;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      .heading {
+        margin-bottom: 40px;
+        text-align: center;
+        span {
+          font-family: sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+        }
+        h2 {
+          font-family: "Yuji Syuku", serif;
+          font-size: 30px;
+          font-weight: 400;
+        }
+      }
+      #timer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
+          font-family: "Kalam", cursive;
+          position: relative;
+          display: flex;
+          width: 80px;
+          height: 80px;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+          }
+          h2 {
+            font-size: 30px;
+            font-weight: 400;
+          }
+
+          &:nth-child(odd) {
+            background: #d8a33a;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .homeImg {
+      width: 40%;
+      height: 600px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#about {
+  margin-top: 50px;
+
+  #aboutBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .aboutTexts {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+      font-family: sans-serif;
+      font-weight: 600;
+      line-height: 23px;
+      letter-spacing: 1px;
+    }
+    .date {
+      h2 {
+        color: #d8a33a;
+        font-size: 80px;
+        font-weight: 400;
+        font-family: "Kalam", cursive;
+      }
+    }
+  }
+}
+
+#program {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 50px;
+  #programBox {
+    .title {
+      margin: 20px 0;
+      text-align: center;
+      h2 {
+        color: #111;
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: 700;
+      }
+    }
+    .programBar {
+      display: flex;
+      padding: 50px 0;
+      align-items: center;
+      justify-content: space-between;
+
+      .item {
+        height: 100px;
+
+        width: calc(50% - 40px);
+        display: flex;
+        align-items: center;
+
+        .itemIcon {
+          margin-right: 20px;
+          width: 100px;
+          height: 100px;
+          svg {
+            fill: rgb(216, 164, 59);
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .itemHeading {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          span {
+            font-size: 20px;
+            color: #111;
+            font-weight: 600;
+          }
+          h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111;
+            letter-spacing: 1px;
+          }
+          p {
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #111;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  margin-top: 60px;
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footerTop {
+      font-family: sans-serif;
+      display: flex;
+      text-align: center;
+      margin-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 34px;
+        font-weight: 600;
+        color: #111;
+
+        span {
+          color: #d8a33a;
+        }
+      }
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    margin-top: 40px;
+    #homeBox {
+        
+      flex-direction: column;
+      .homeTitle {
+        margin-right: 0;
+        width: 100%;
+      }
+      .homeImg {
+        height: 100%;
+        width: 80%;
+      }
+    }
+  }
+  #program {
+    #programBox {
+      .programBar {
+        flex-direction: column;
+        .item {
+          margin-bottom: 40px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  #home {
+    #homeBox {
+        .homeImg {
+            width: 100%;
+        }
+      .homeTitle {
+        .heading {
+          span {
+            font-size: 17px;
+          }
+          h2 {
+            font-size: 24px;
+          }
+        }
+        #timer {
+          .item {
+            width: 60px;
+            height: 60px;
+
+            span {
+              top: 3px;
+              right: 3px;
+            }
+            h2 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #program {
+    #programBox {
+      .title {
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .programBar {
+        .item {
+          
+          .itemHeading {
+            span {
+              font-size: 18px;
+            }
+            h2 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .footerBox {
+      .footerTop {
+        p {
+            font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+    #about {
+        #aboutBox {
+          .date {
+            h2 {
+              color: #d8a33a;
+              font-size: 60px;
+              font-weight: 400;
+              font-family: "Kalam", cursive;
+            }
+          }
+        }
+      }
+}
